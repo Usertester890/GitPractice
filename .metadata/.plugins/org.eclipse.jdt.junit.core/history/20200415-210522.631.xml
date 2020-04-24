@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="demoproject" tests="2" started="2" failures="0" errors="2" ignored="1">
+  <testsuite name="com.runner.TestRunner" time="0.048">
+    <testsuite name="Feature: E2E flow" time="0.048">
+      <testsuite name="Scenario: Validate E2E flow of user login" time="0.007" incomplete="true">
+        <error>org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 76
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'URANUS', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.2'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x014B7C93+1473683]
+	Ordinal0 [0x0143ADB1+961969]
+	Ordinal0 [0x013C42E3+475875]
+	Ordinal0 [0x0135F365+62309]
+	Ordinal0 [0x0135BC77+48247]
+	Ordinal0 [0x01379149+168265]
+	Ordinal0 [0x01378D1D+167197]
+	Ordinal0 [0x0137742B+160811]
+	Ordinal0 [0x01360AE6+68326]
+	Ordinal0 [0x01361BF0+72688]
+	Ordinal0 [0x01361B89+72585]
+	Ordinal0 [0x01454B77+1067895]
+	GetHandleVerifier [0x01556875+506677]
+	GetHandleVerifier [0x01556610+506064]
+	GetHandleVerifier [0x0155D1B8+533624]
+	GetHandleVerifier [0x0155704A+508682]
+	Ordinal0 [0x0144C266+1032806]
+	Ordinal0 [0x0144C0DF+1032415]
+	Ordinal0 [0x01456A8B+1075851]
+	Ordinal0 [0x01456BF3+1076211]
+	Ordinal0 [0x01455BA5+1072037]
+	BaseThreadInitThunk [0x76AD0419+25]
+	RtlGetAppContainerNamedObjectPath [0x776E66DD+237]
+	RtlGetAppContainerNamedObjectPath [0x776E66AD+189]
+&#13;
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#13;
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)&#13;
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)&#13;
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)&#13;
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)&#13;
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)&#13;
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)&#13;
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)&#13;
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)&#13;
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)&#13;
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)&#13;
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)&#13;
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)&#13;
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)&#13;
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)&#13;
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)&#13;
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)&#13;
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)&#13;
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)&#13;
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)&#13;
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)&#13;
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)&#13;
+	at demoproject.login.initialiseDriver(login.java:13)&#13;
+	at stepDefinition.Login.user_login_to_web_application_in_chrome(Login.java:15)&#13;
+	at ✽.When user login to web application in chrome(test.feature:5)&#13;
+&#13;
+</error>
+        <testcase name="When user login to web application in chrome" classname="Scenario: Validate E2E flow of user login" time="0.004">
+          <error>org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 76
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'URANUS', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.2'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x014B7C93+1473683]
+	Ordinal0 [0x0143ADB1+961969]
+	Ordinal0 [0x013C42E3+475875]
+	Ordinal0 [0x0135F365+62309]
+	Ordinal0 [0x0135BC77+48247]
+	Ordinal0 [0x01379149+168265]
+	Ordinal0 [0x01378D1D+167197]
+	Ordinal0 [0x0137742B+160811]
+	Ordinal0 [0x01360AE6+68326]
+	Ordinal0 [0x01361BF0+72688]
+	Ordinal0 [0x01361B89+72585]
+	Ordinal0 [0x01454B77+1067895]
+	GetHandleVerifier [0x01556875+506677]
+	GetHandleVerifier [0x01556610+506064]
+	GetHandleVerifier [0x0155D1B8+533624]
+	GetHandleVerifier [0x0155704A+508682]
+	Ordinal0 [0x0144C266+1032806]
+	Ordinal0 [0x0144C0DF+1032415]
+	Ordinal0 [0x01456A8B+1075851]
+	Ordinal0 [0x01456BF3+1076211]
+	Ordinal0 [0x01455BA5+1072037]
+	BaseThreadInitThunk [0x76AD0419+25]
+	RtlGetAppContainerNamedObjectPath [0x776E66DD+237]
+	RtlGetAppContainerNamedObjectPath [0x776E66AD+189]
+&#13;
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#13;
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)&#13;
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)&#13;
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)&#13;
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)&#13;
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)&#13;
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)&#13;
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)&#13;
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)&#13;
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)&#13;
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)&#13;
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)&#13;
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)&#13;
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)&#13;
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)&#13;
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)&#13;
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)&#13;
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)&#13;
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)&#13;
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)&#13;
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)&#13;
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)&#13;
+	at demoproject.login.initialiseDriver(login.java:13)&#13;
+	at stepDefinition.Login.user_login_to_web_application_in_chrome(Login.java:15)&#13;
+	at ✽.When user login to web application in chrome(test.feature:5)&#13;
+&#13;
+</error>
+        </testcase>
+        <testcase name="Then login page is displayed successfully with username &quot;user123&quot;" classname="Scenario: Validate E2E flow of user login" time="0.041" ignored="true"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

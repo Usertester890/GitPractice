@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="demoproject" tests="2" started="2" failures="0" errors="0" ignored="0">
+  <testsuite name="com.runner.TestRunner" time="0.013">
+    <testsuite name="Feature: E2E flow" time="0.013">
+      <testsuite name="Scenario: Validate E2E flow of user login" time="0.013">
+        <testcase name="When user login to web application in chrome" classname="Scenario: Validate E2E flow of user login" time="0.001"/>
+        <testcase name="Then login page is displayed successfully with username &quot;user123&quot;" classname="Scenario: Validate E2E flow of user login" time="0.012"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

@@ -1,0 +1,15 @@
+package stepDefinition;
+
+import cucumber.api.PendingException;
+import cucumber.api.java.en.When;
+
+public class Login {
+	
+	@When("^user login to web application in chrome$")
+	public void user_login_to_web_application_in_chrome() throws Throwable {
+	    System.out.println("Chrome is launched");
+	    
+	}
+
+
+}

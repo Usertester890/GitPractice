@@ -1,0 +1,7 @@
+Feature: E2E flow
+
+Scenario: Validate E2E flow of user login
+
+When user login to web application in chrome
+
+Then login page is displayed successfully with username "Brocolli"
