@@ -1,0 +1,21 @@
+package demoproject;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class login {
+		
+	public WebDriver driver;
+	
+public void initialiseDriver() {
+	
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Beula\\Downloads\\chromedriver_win32 (1)\\chromedriver.exe");
+		driver = new ChromeDriver();
+		driver.get("https://www.makemytrip.com/");
+		driver.findElement(By.xpath("//*[@id=\"SW\"]/div[2]/div[2]/div/div/nav/ul/li[2]/a")).click();
+	
+}
+	
+	
+}
