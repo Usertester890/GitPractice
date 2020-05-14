@@ -1,0 +1,16 @@
+1588657262028	Rename resource 'Test2.feature'
+1588657546686	Rename type 'Test2Step'
+1588841511327	Rename package 'com.runner'
+1588916106446	Copy file
+1588917538411	Move 'Base.java' to 'GenericSteps'
+1588917555981	Rename resource 'Files'
+1588917567369	Move 'DatafromExcel.java' to 'Utilities'
+1588917576772	Move 'Properties' to 'Utilities'
+1588918260587	Rename resource 'Base.java'
+1588918795702	Rename package 'demoproject'
+1588918868170	Delete element
+1588918910602	Delete element
+1588918993282	Delete element
+1588919096454	Delete element
+1588919899667	Rename compilation unit 'msn.java'
+1588919937196	Rename resource 'msn.feature'

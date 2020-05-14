@@ -1,0 +1,9 @@
+package msn;
+
+import webGeneric.ReusableMethods;
+
+public class homePage extends ReusableMethods{
+	
+	
+
+}

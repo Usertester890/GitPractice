@@ -1,0 +1,15 @@
+Feature: E2E flow of Test2
+
+Background:
+Given browser and link is launched successfully in chrome
+
+
+Scenario: Validate the parameterization using Data tables in Gherkin
+Given user click on footer link
+When user select "Travel" link
+And user click on Lifestyle drop down
+And user select "weather" link
+And user capture todays weather for Bangalore
+Then user search for Delhi and capture its weather
+And user closes the browser
+

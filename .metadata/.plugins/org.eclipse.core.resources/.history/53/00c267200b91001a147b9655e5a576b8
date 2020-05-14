@@ -1,0 +1,22 @@
+package msn;
+
+import org.openqa.selenium.WebDriver;
+
+import webGeneric.ReusableMethods;
+
+public class homePage extends ReusableMethods{
+	
+	public void footerLinkClick()
+	{
+		System.out.println("footer");
+	}
+	
+	public void scrollDown()
+	{
+		
+	}
+
+	//driver.get("https://www.msn.com/en-in");
+	
+
+}

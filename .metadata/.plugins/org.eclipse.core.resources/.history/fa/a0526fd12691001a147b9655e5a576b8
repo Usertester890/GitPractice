@@ -1,0 +1,77 @@
+package stepDefinition;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+
+import cucumber.api.PendingException;
+import cucumber.api.java.en.And;
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+
+import msn.*;
+import webGeneric.ReusableMethods;
+
+public class msnSteps extends ReusableMethods{
+
+	@Given("^browser and link is launched successfully in chrome$")
+	public void browser_and_link_is_launched_successfully_in_chrome() {
+	   //ReusableMethods reuseMethods = new ReusableMethods();
+		driver = initialiseDriver();
+	   driver.get("https://www.msn.com/en-in");
+	   driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+	   driver.manage().window().maximize();
+	   
+	}
+
+	
+	@Given("^user click on footer link$")
+	public void user_click_on_footer_link() throws InterruptedException  {
+		
+		homePage homePageFooter = new homePage();
+		homePageFooter.footerLinkClick(driver);
+	    
+	}
+
+	@When("^user click on Travel option$")
+	public void user_click_on_Travel_option()  {
+		homePage homePagelink = new homePage();
+		homePagelink.clickTravel(driver);
+
+	}
+
+	@And("^user click on Lifestyle drop down$")
+	public void user_click_on_Lifestyle_drop_down()  {
+		homePage homePagelink = new homePage();
+		homePagelink.clickLifestyle(driver);
+
+	}
+
+	@And("^user select \"([^\"]*)\" link$")
+	public void user_select_link(String identifier)  {
+	    // Write code here that turns the phrase above into concrete actions
+		locateLink(identifier, driver).click();
+	}
+
+	@And("^user capture todays weather for Bangalore$")
+	public void user_capture_todays_weather_for_Bangalore()  {
+	    // Write code here that turns the phrase above into concrete actions
+	    
+	}
+
+	@Then("^user search for Delhi and capture its weather$")
+	public void user_search_for_Delhi_and_capture_its_weather()  {
+	    // Write code here that turns the phrase above into concrete actions
+	    
+	}
+	
+	@And("^user closes the browser$")
+	public void user_closes_the_browser()  {
+	    driver.quit();
+	    
+	}
+	
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename field &apos;CurrentLocation&apos; in &apos;msn.WeatherPage&apos; to &apos;currentLocation&apos;&#x0D;&#x0A;- Original project: &apos;demoproject&apos;&#x0D;&#x0A;- Original element: &apos;msn.WeatherPage.CurrentLocation&apos;&#x0D;&#x0A;- Renamed element: &apos;msn.WeatherPage.currentLocation&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" delegate="false" deprecate="false" description="Rename field &apos;CurrentLocation&apos;" flags="589830" getter="false" id="org.eclipse.jdt.ui.rename.field" input="/src\/main\/java&lt;msn{WeatherPage.java[WeatherPage^CurrentLocation" name="currentLocation" references="true" setter="false" stamp="1589282647442" textual="false" version="1.0"/>
+</session>

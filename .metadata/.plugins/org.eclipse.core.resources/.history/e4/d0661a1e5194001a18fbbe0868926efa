@@ -1,0 +1,86 @@
+package msn;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import webGeneric.LocationStrategy;
+
+public class WeatherPage extends LocationStrategy {
+	String location;
+	String temperature;
+	String currentLocation;
+
+	public void getTempXXXX(WebDriver driver) {
+		location = driver.findElement(By.xpath("//div[@class='mylocations']/div")).getText();
+		System.out.println("Location is " + location);
+		if (location.contains("Bengaluru")) {
+			// temperature =
+			// driver.findElement(By.xpath("//li[@data-aop='day1']/a/ul/li/p[1]")).getText();
+			temperature = driver
+					.findElement(By.xpath("//li[@data-aop='day1']//a[contains(@href,'weather')]/ul/li[1]/p[1]"))
+					.getText();
+			System.out.println("The weather at Bangaluru is " + temperature);
+		}
+
+	}
+
+	public void getTempParameterised(WebDriver driver, String day, String location) throws InterruptedException {
+
+		currentLocation = driver.findElement(By.xpath("//div[@class='mylocations']/div")).getText();
+		System.out.println("Current location is " + currentLocation);
+		if (currentLocation.contains(location)) {
+			System.out.println("The temperature of " + location + day + " is " + getTempOfDay(driver, day));
+		}
+
+		else {
+			
+			driver.findElement(By.xpath("//div[@class='mylocations']/div")).click();
+			WebElement locationBox = driver.findElement(By.xpath(
+					"//*[@class='favs show']//*[@class='weaaddlocation']//*[@placeholder='Search for Location / City']"));
+			javaScript (driver, locationBox);
+			Thread.sleep(3000);
+			driver.findElement(By.xpath(
+					"//*[@class='favs show']//*[@class='weaaddlocation']//*[@placeholder='Search for Location / City']")).sendKeys(location);
+			keyboardDownArrow(driver);
+
+			WebElement searchButton = driver.findElement(By.xpath("//*[@class='favs show']//button[@title='Search']"));
+			javaScript (driver, searchButton);
+			System.out.println("The temperature of " + location + day + " is " + getTempOfDay(driver, day));
+			try {
+				Thread.sleep(3000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+
+		}
+	}
+
+	public String getTempOfDay(WebDriver driver, String day) {
+		String temp = null;
+
+		{
+			if (day.toLowerCase().contains("today".toLowerCase())) {
+				temp = driver
+						.findElement(By.xpath("//*[text() = 'Weather Forecast'] /parent:: div/section[1]/div[1]/span"))
+						.getText();
+				return temp;
+			}
+
+			else if (day.toLowerCase().contains("tomorrow".toLowerCase())) {
+				temp = driver
+						.findElement(By.xpath("//li[@data-aop='day2']//a[contains(@href,'weather')]/ul/li[1]/p[1]"))
+						.getText();
+				return temp;
+			}
+
+		}
+		return temp;
+	}
+
+}

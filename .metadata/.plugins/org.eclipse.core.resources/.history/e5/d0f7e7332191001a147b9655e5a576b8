@@ -1,0 +1,28 @@
+package webGeneric;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class ReusableMethods {
+
+	public WebDriver driver;
+	
+	public WebDriver initialiseDriver() {
+		
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Beula\\Downloads\\chromedriver_win32 (1)\\chromedriver.exe");
+		return driver = new ChromeDriver();
+		
+	}
+	
+	public void locateLink(String identifier, WebDriver driver) {
+		
+		WebElement linkElement = null;
+		String xpath1= String.format("//a[contains(@href, '%s')])", identifier);
+				return ;
+				//driver.findElement(By.xpath(xpath1));
+				linkElement = driver.findElement(By.xpath("//a[contains(@href,'lifestyle')]"));
+	
+}
+}
